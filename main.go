@@ -1,9 +1,16 @@
 package main
 
-import "github.com/lugekit/design_pattern/strategy"
+import (
+	"fmt"
+
+	"github.com/lugekit/design_pattern/observer"
+	"github.com/lugekit/design_pattern/strategy"
+)
+
+const dashLine = "-------------"
 
 func main() {
-	duck := strategy.NewNoobStrategyDuck()
-	duck.PerformFly()
-	duck.PerformSquak()
+	strategy.Main()
+	fmt.Println(dashLine)
+	observer.Main()
 }

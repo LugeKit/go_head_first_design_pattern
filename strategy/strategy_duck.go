@@ -32,7 +32,7 @@ type strategyNoobDuck struct {
 	baseStrategyDuck
 }
 
-func NewNoobStrategyDuck() strategyDuck {
+func NewStrategyNoobDuck() strategyDuck {
 	return &strategyNoobDuck{
 		baseStrategyDuck: baseStrategyDuck{
 			squakExcutor: &noSquakBehavior{},
