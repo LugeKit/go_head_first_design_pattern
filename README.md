@@ -1,4 +1,4 @@
-Go implementation of Design Pattern in *Head First Design Pattern*
+Go implementation of Design Pattern in *Head First Design Pattern*. Notice that Go is not an OO language and doesn't have object inheritance, some design patterns might not be included.
 
 ## Strategy
 
