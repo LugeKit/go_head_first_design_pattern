@@ -1,8 +1,6 @@
 package observer
 
-import (
-	"fmt"
-)
+import "github.com/lugekit/design_pattern/tools"
 
 type WeatherData struct {
 	observers []Observer
@@ -28,7 +26,7 @@ func (w *WeatherData) Unregister(o Observer) {
 			break
 		}
 	}
-	w.observers, _ = remove(w.observers, index)
+	w.observers, _ = tools.Remove(w.observers, index)
 }
 
 func (w *WeatherData) SetNewData(d string) {
@@ -36,13 +34,4 @@ func (w *WeatherData) SetNewData(d string) {
 	for _, o := range w.observers {
 		o.Update(w)
 	}
-}
-
-func remove[T any](slice []T, index int) ([]T, error) {
-	if len(slice) <= index {
-		return slice, fmt.Errorf("index out of bound")
-	}
-
-	slice = append(slice[:index], slice[index+1:]...)
-	return slice, nil
 }

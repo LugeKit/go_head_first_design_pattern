@@ -15,3 +15,7 @@ Decorator is quite interesting, it can help you to add some extra abilities to t
 ## Singleton
 
 Singleton is quite different in different languages, while in Go you can use sync.Once to help you with it. You can look up it source code to help you understand how Go to do this job. Go uses atomic int and mutex to achieve singleton's goal.
+
+## Command
+
+Simplify something in book, only 2 commands and no marco command and no interface like Light and fan, just simple light name and fan name which helps to understand.
