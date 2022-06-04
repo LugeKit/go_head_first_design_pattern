@@ -7,3 +7,7 @@ We should notice that Go doesn't have inheritance in struct, so the base type sh
 ## Observer
 
 Observer design pattern is quite easy to understand, just see the code.
+
+## Decorator
+
+Decorator is quite interesting, it can help you to add some extra abilities to the original type. Because there is no something like super.Call() in Go, I use a field to help us achieve this.

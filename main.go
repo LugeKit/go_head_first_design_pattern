@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	"github.com/lugekit/design_pattern/decorator"
 	"github.com/lugekit/design_pattern/observer"
 	"github.com/lugekit/design_pattern/strategy"
 )
@@ -10,7 +11,12 @@ import (
 const dashLine = "-------------"
 
 func main() {
-	strategy.Main()
+	runOneMain(strategy.Main)
+	runOneMain(observer.Main)
+	runOneMain(decorator.Main)
+}
+
+func runOneMain(f func()) {
+	f()
 	fmt.Println(dashLine)
-	observer.Main()
 }
