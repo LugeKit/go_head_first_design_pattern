@@ -11,3 +11,7 @@ Observer design pattern is quite easy to understand, just see the code.
 ## Decorator
 
 Decorator is quite interesting, it can help you to add some extra abilities to the original type. Because there is no something like super.Call() in Go, I use a field to help us achieve this.
+
+## Singleton
+
+Singleton is quite different in different languages, while in Go you can use sync.Once to help you with it. You can look up it source code to help you understand how Go to do this job. Go uses atomic int and mutex to achieve singleton's goal.
