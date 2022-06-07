@@ -2,7 +2,7 @@ Go implementation of Design Pattern in *Head First Design Pattern*. Notice that 
 
 ## Strategy
 
-We should notice that Go doesn't have inheritance in struct, so the base type should be an interface. eg, if we need a duck to return from a func newDuck(), the duck should be an interface, and has several methods which a duck should have. And we need a baseDuck(or parentDuck, whatever), to implement the methods which defined by duck interface, and all son ducks should have common fields baseDuck, which contains the basically methods and fields that all sons need. See the code for more details.
+We should notice that Go doesn't have inheritance in struct, so the base type should be an interface. eg, if we need a duck to return from a func `newDuck()`, the duck should be an interface, and has several methods which a duck should have. And we need a baseDuck(or parentDuck, whatever), to implement the methods which defined by duck interface, and all son ducks should have common fields baseDuck, which contains the basically methods and fields that all sons need. See the code for more details.
 
 ## Observer
 
@@ -10,7 +10,7 @@ Observer design pattern is quite easy to understand, just see the code.
 
 ## Decorator
 
-Decorator is quite interesting, it can help you to add some extra abilities to the original type. Because there is no something like super.Call() in Go, I use a field to help us achieve this.
+Decorator is quite interesting, it can help you to add some extra abilities to the original type. Because there is no something like `super.Call() `in Go, I use a field to help us achieve this.
 
 ## Singleton
 
@@ -28,3 +28,6 @@ Facade helps to hide lower interface and gives a simpler interface to users.
 
 ## Template
 Use combination to implement template design pattern.
+
+## Iterator
+Notice that Go's slice is NOT CHANGED after `append(slice, ...)`, instead, it will create a new slice and return, which means if you pass a slice into an interator and append the slice outside, the iterator can't reflect that change and will only return you the elements of the original slice. I think it is quite dangerous.
