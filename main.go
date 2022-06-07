@@ -6,6 +6,7 @@ import (
 	"github.com/lugekit/design_pattern/adapter"
 	"github.com/lugekit/design_pattern/command"
 	"github.com/lugekit/design_pattern/decorator"
+	"github.com/lugekit/design_pattern/facade"
 	"github.com/lugekit/design_pattern/observer"
 	"github.com/lugekit/design_pattern/singleton"
 	"github.com/lugekit/design_pattern/strategy"
@@ -20,6 +21,7 @@ func main() {
 	runOneMain(singleton.Main, "Singleton")
 	runOneMain(command.Main, "Command")
 	runOneMain(adapter.Main, "Adapter")
+	runOneMain(facade.Main, "Facade")
 }
 
 func runOneMain(f func(), pattern string) {

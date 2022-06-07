@@ -22,3 +22,6 @@ Simplify something in book, only 2 commands and no marco command and no interfac
 
 ## Adapter
 Adapter helps to convert interface.
+
+## Facade
+Facade helps to hide lower interface and gives a simpler interface to users.
