@@ -25,3 +25,6 @@ Adapter helps to convert interface.
 
 ## Facade
 Facade helps to hide lower interface and gives a simpler interface to users.
+
+## Template
+Use combination to implement template design pattern.

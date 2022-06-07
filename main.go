@@ -10,6 +10,7 @@ import (
 	"github.com/lugekit/design_pattern/observer"
 	"github.com/lugekit/design_pattern/singleton"
 	"github.com/lugekit/design_pattern/strategy"
+	"github.com/lugekit/design_pattern/template"
 )
 
 const dashLine = "-------------"
@@ -22,6 +23,7 @@ func main() {
 	runOneMain(command.Main, "Command")
 	runOneMain(adapter.Main, "Adapter")
 	runOneMain(facade.Main, "Facade")
+	runOneMain(template.Main, "Template")
 }
 
 func runOneMain(f func(), pattern string) {
