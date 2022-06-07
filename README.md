@@ -19,3 +19,6 @@ Singleton is quite different in different languages, while in Go you can use syn
 ## Command
 
 Simplify something in book, only 2 commands and no marco command and no interface like Light and fan, just simple light name and fan name which helps to understand.
+
+## Adapter
+Adapter helps to convert interface.

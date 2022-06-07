@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	"github.com/lugekit/design_pattern/adapter"
 	"github.com/lugekit/design_pattern/command"
 	"github.com/lugekit/design_pattern/decorator"
 	"github.com/lugekit/design_pattern/observer"
@@ -18,6 +19,7 @@ func main() {
 	runOneMain(decorator.Main, "Decorator")
 	runOneMain(singleton.Main, "Singleton")
 	runOneMain(command.Main, "Command")
+	runOneMain(adapter.Main, "Adapter")
 }
 
 func runOneMain(f func(), pattern string) {
